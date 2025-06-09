@@ -1,24 +1,32 @@
 {
   "headers": [
-    {
-      "source": "/Build/*.data",
-      "headers": [
-        { "key": "Content-Type", "value": "application/octet-stream" }
-      ]
-    },
-    {
-      "source": "/Build/*.wasm",
-      "headers": [
-        { "key": "Content-Type", "value": "application/wasm" },
-        { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" },
-        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" }
-      ]
-    },
-    {
-      "source": "/Build/*.js",
-      "headers": [
-        { "key": "Content-Type", "value": "application/javascript" }
-      ]
-    }
-  ]
+  {
+    "source": "/Build/Build.data",
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/octet-stream"
+      }
+    ]
+  },
+  {
+    "source": "/Build/Build.wasm",
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/wasm"
+      }
+    ]
+  },
+  {
+    "source": "/Build/Build.framework.js",
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/javascript"
+      }
+    ]
+  }
+]
+
 }
